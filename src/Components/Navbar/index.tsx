@@ -10,7 +10,7 @@ export default function NavBar()
             <Links>
                 <StyledA to="#inicio" text="Início"></StyledA>
                 <StyledA to="#localizacao" text="Localização"></StyledA>
-                <StyledA to="#localizacao" text="Localização"></StyledA>
+                <StyledA to="#servico" text="Serviço"></StyledA>
                 <StyledA to="#contato" text="Contato"></StyledA>
             </Links>
             <RightContainer>
