@@ -1,10 +1,11 @@
+import { Icon, Div, Link } from "./styles";
 
-export default function LocationDiv({ text } : { text: string })
+export default function LocationDiv({ link, text } : { link: string, text: string })
 {
     return (
-        <div>
-            <img src="maps-and-flags.png"/>
-            <p>{text}</p>
-        </div>
+        <Div>
+            <Icon src="maps-and-flags.png"/>
+            <Link href={link} target="_blank">{text}</Link>
+        </Div>
     )
 }
