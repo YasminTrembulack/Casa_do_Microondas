@@ -1,4 +1,4 @@
-import Contact from "../Contato";
+import Contact from "../Contact";
 import Location from "../Location";
 
 import { MainContainer } from "./styles";

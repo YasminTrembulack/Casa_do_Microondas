@@ -5,7 +5,7 @@ import { Container, LocationContainer, Title } from "./styles.tsx";
 export default function Location()
 {
     return (
-        <Container id="#localizacao">
+        <Container id="localizacao">
             <Title>Nossas Lojas!</Title>
             <LocationContainer>
                 <LocationDiv 

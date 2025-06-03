@@ -16,7 +16,7 @@ import {
 
 export default function Contact() {
   return (
-    <Container id="#contato">
+    <Container id="contato">
       <Title>Entre em Contato</Title>
       <ContactDiv>
         <Section>
