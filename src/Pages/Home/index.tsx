@@ -1,3 +1,4 @@
+import Contact from "../Contato";
 import Location from "../Location";
 
 import { MainContainer } from "./styles";
@@ -8,6 +9,7 @@ export default function Home() {
         <MainContainer>
             <h1>HOME</h1>
             <Location/>
+            <Contact/>
         </MainContainer>
     );
 }
