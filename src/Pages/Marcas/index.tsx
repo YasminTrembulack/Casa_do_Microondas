@@ -2,7 +2,7 @@ import { Section, Title, BrandsContainer, BrandImage } from './style';
 
 export default function Marcas() {
   return (
-    <Section>
+    <Section id='marcas'>
       <Title>Marcas que trabalhamos:</Title>
       <BrandsContainer>
         <BrandImage src="Samsung.png" alt="Samsung" />

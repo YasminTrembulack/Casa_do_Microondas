@@ -10,6 +10,8 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
   width: 100%;
   padding: 20px 0px;
   font-size: 28px;
@@ -54,7 +56,9 @@ export const Phones = styled.div`
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 
   h3 {
-    font-size: 23px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
     margin-bottom: 10px;
     border-bottom: solid white 1px;
   }

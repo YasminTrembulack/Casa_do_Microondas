@@ -10,6 +10,8 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
   width: 100%;
   padding: 20px 0px;
   font-size: 28px;

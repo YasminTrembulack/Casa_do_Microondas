@@ -17,7 +17,7 @@ export default function Introduction() {
 
   return (
     <>
-      <Section>
+      <Section id='inicio'>
         <BackgroundImage src="cozinha.jpg" alt="Imagem de fundo" />
         <TextOverlay>
           <Title>Conserto com peças e acessórios originais</Title>

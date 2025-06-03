@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  width: 100vw;
-  min-height: 100vh; /* ocupa a tela toda */
-  padding: 4rem 2rem;
-  background-color:rgb(186, 186, 186);
+  width: 70%;
+  padding-top: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,10 +10,13 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.h2`
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color:rgb(0, 0, 0);
-  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  padding: 20px 0px;
+  font-size: 28px;
+  border-bottom: solid #ffc0ad 2px;
+  margin-bottom: 20px;
 `;
 
 export const BrandsContainer = styled.div`
@@ -28,7 +29,7 @@ export const BrandsContainer = styled.div`
 `;
 
 export const BrandImage = styled.img`
-  width: 150px;
+  width: 100px;
   height: auto;
   object-fit: contain;
   filter: grayscale(0.3);
