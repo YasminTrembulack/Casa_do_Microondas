@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+🔧 Objetivo da Reformulação
+A reformulação do site teve como foco principal:
+-Melhorar a estética visual;
+-Garantir maior legibilidade;
+-Aproveitar melhor o espaço da tela;
+-Reduzir ruídos visuais causados por textos redundantes;
+-Manter a identidade visual do site antigo;
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Remoção de textos duplicados como descrições repetidas nos títulos.
+Centralização das informações-chave, reduzindo a necessidade de múltiplos parágrafos explicativos.
+Tornamos o site mais direto ao ponto, com conteúdo objetivo e hierarquizado.
 
-Currently, two official plugins are available:
+Tipografia
+Antes: Fonte padrão sem destaque para hierarquia de títulos e subtítulos.
+Depois:
+-Atualização na tipografia dos títulos (h1, h2) para tamanhos maiores e negrito. Fonte: Bebas Neue 
+Motivo: Melhorar a leitura e ainda deixar clara, dar identidade e destacar informações importantes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Section de Introdução
+Criado um componente/page Introduction com:
+-Imagem de fundo para estética visual.
+-Titulos e subtitulos destaques para mostrar o que o site vende;
+-Adição de um botão laranja com bordas arredondadas, que abre um modal informativo.
+O modal contém:
+-Título vermelho (CONSERTO EM 30 MINUTOS)
+-Botão de fechar (×) com funcionalidade.
 
-## Expanding the ESLint configuration
+Section de Marcas
+Antes: Imagens desalinhadas, tamanhos diferentes, sem padronização visual.
+Depois:
+-Criação da section Marcas com título “Marcas que trabalhamos:”.
+-Padronização de imagens (150px de largura máx.).
+-Alinhamento responsivo com flex-wrap e gap entre logos.
+-Hover com zoom e retirada do efeito grayscale.
+Motivo: Transmitir credibilidade através da apresentação uniforme das marcas atendidas.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
